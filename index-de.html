@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="static/styles/navpanel-dark.css">
+    <link rel="stylesheet" href="static/styles/contents-dark.css">
     <style>
         body {
             background-color: rgb(32, 32, 32);
@@ -19,27 +20,62 @@
 </head>
 
 <body>
-    <div class="navpanel-dark">
-        <nav>
-            <ul>
-                <li><a href="index.html">Oleksandr Onishchenko</a></li>
-            </ul>
-        </nav>
-        <nav>
-            <ul>
-                <div class="language-sel-dark">
-                    <li><a href="index.html">EN</a></li>
-                    <p>|</p>
-                    <li><a href="index-ru.html">RU</a></li>
-                    <p>|</p>
-                    <li><a href="index-de.html">DE</a></li>
+    <header>
+        <div class="header-dark">
+            <div class="navpanel-dark">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Oleksandr Onishchenko</a></li>
+                    </ul>
+                </nav> 
+                <nav>
+                    <ul>
+                        <div class="language-sel-dark">
+                            <li><a href="index.html">EN</a></li>
+                            <p>|</p>
+                            <li><a href="index-de.html">DE</a></li>
+                            <p>|</p>
+                            <li><a class="last-language-bar-margin-right" href="index-ru.html">RU</a></li>
+                        </div>
+                        <div class="dropbox-dark">
+                            <button class="nav-btn-dark">&#9776</button>
+                            <div class="dropbox-links-dark">
+                                <li><a href="https://www.linkedin.com/in/oleksandr-onishchenko" target="_blank">LinkedIn</a></li>
+                                <li><a href="https://github.com/alxww55"target="_blank">GitHub|Portfolio</a></li>
+                                <li><a href="#">Kontakt</a></li>
+                            </div>
+                        </div>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main-body-dark">
+            <div class="photo-cont-dark">
+                <div class="photo-avatar-dark">
+                    <img src="static/images/Work in progress.png" alt="Photo from Oleksandr Onishchenko">
                 </div>
-                <li><a href="https://www.linkedin.com/in/oleksandr-onishchenko" target="_blank">LinkedIn</a></li>
-                <li><a href="https://github.com/alxww55"target="_blank">GitHub|Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
+                <div class="text-card-dark">               
+                    <h2>Oleksandr</h2>
+                    <h2>Onishchenko</h2>
+                    <img src="static/images/separator-bar-darkblue.png" alt="Separator bar">
+                    <p>Auszubildender in IT-Consulting</p>
+                </div>
+            </div>
+            <div class="text-cont-dark">
+                <h1>Hallo!</h1>
+                <h3>Hier ein bisschen über mich</h3>
+                <div class="buttons-dark">
+                    <div class="cv-show-button-dark">
+                        <a href="#">Lebenslauf</a>
+                    </div>
+                    <div class="contact-button-dark">
+                        <a href="#">Kontaktieren</a>
+                    </div>
+                </div>
+        </div>   
+    </main>
 </body>
 
 </html>
