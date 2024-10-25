@@ -12,10 +12,14 @@
         rel="stylesheet">
     <link rel="stylesheet" href="static/styles/navpanel-dark.css">
     <link rel="stylesheet" href="static/styles/contents-dark.css">
+    <link rel="stylesheet" href="static/styles/footer-dark.css">
     <style>
         body {
-            background-color: rgb(32, 32, 32);
-            background-size: auto;
+            background-image:
+            /*radial-gradient(farthest-corner at 84% 20%, rgb(24 72 160) 1%, rgb(26 61 128) 10%, rgb(29 52 97) 20%, rgb(32 42 65) 30%, rgb(34 32 33) 40%, rgb(32, 32, 32) 50%);*/
+            radial-gradient(circle farthest-corner at 84% 12%, rgb(24 72 160) 1%, rgb(40 33 37) 19%, rgb(34 32 33) 30%, rgb(32, 32, 32) 50%);
+            position: relative;
+            background-size: 100% 200%;
         }
     </style>
 </head>
@@ -54,6 +58,9 @@
     </header>
     <main>
         <div class="main-container">
+            <div class="introducing-header-dark">
+                <h1>Let me <br>introduce<br> myself!</h1>
+            </div>
             <div class="main-body-dark">
                 <div class="photo-cont-dark">
                     <div class="photo-avatar-dark">
@@ -78,17 +85,83 @@
                         </div>
                     </div>
                     <div class="about-me-dark">
-                        <p> I am 18 years old and live in the Hamburg metropolitan area. I am doing an apprenticeship as an
-                            IT specialist in system integration. In my free time, I focus on learning programming languages
-                            and web development. However, I also enjoy spending time away from the screen—I like to travel
+                        <p> I am 18 years old and live in the Hamburg metropolitan area. I am doing an apprenticeship as
+                            an
+                            IT specialist in system integration. In my free time, I focus on learning programming
+                            languages
+                            and web development. However, I also enjoy spending time away from the screen—I like to
+                            travel
                             and engage in various activities. I am confident that the IT is perfect for my career
                             development, as it represents the future
                         </p>
                     </div>
                 </div>
             </div>
+            <div class="skills-dark">
+                <h2>What am I doing?</h2>
+            </div>
+            <div class="skills-container-dark">
+                <p>Currently I am learning: </p>
+                <div class="logos-container-dark">
+                    <img src="static/images/java.png" alt="Java logo">
+                    <img src="static/images/js.png" alt="JavaScript">
+                    <img src="static/images/veeam.png" alt="Veeam">
+                    <img src="static/images/ms365.jpg" alt="MS 365">
+                </div>
+                <p>My Stack: </p>
+                <div class="logos-container-dark">
+                    <img src="static/images/html5.png" alt="HTML5 Logo">
+                    <img src="static/images/css3.png" alt="CSS3 Logo">
+                </div>
+            </div>
+            <div class="coming-soon-dark">
+                <h2>Coming soon...</h2>
+            </div>
+            <div class="coming-soon-container">
+                <p>I´m active working on my projects and will upload them by GitHub</p>
+                <p>Follow me on Github</p>
+                <div class="follow-me-btn">
+                    <div class="follow-me-dark">
+                        <a href="https://github.com/alxww55" target="_blank">Stay tuned</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
+    <footer>
+        <div class="footer-dark">
+            <div class="footer-left-side">
+                <div class="name-footer-dark">
+                    <p>Oleksandr Onishchenko</p>
+                </div>
+                <div class="text-left-footer">
+                    <p>Contact me</p>
+                    <div class="contact-icons-footer">
+                        <a href="https://www.linkedin.com/in/oleksandr-onishchenko"><img
+                                src="static/images/linkedin.png" alt="LinkedIn Icon"></a></li>
+                        <a href="https://github.com/alxww55"><img src="static/images/github.png" alt="GitHub Icon"></a>
+                    </div>
+                    <p class="copyright">© 2024 Oleksandr Onishchenko</p>
+                </div>
+            </div>
+            <div class="footer-right-side">
+                <div class="info-footer-right">
+                    <p>Navigation</p>
+                    <ul>
+                        <li><a href="index-de.html">DE Version</a></li>
+                        <li><a href="index-ru.html">RU Version</a></li>
+                        <li><a href="#">Show CV</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cookies-info">
+                <p>Privacy</p>
+                <ul>
+                    <li><a href="">Learn more</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
