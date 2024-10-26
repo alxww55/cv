@@ -16,10 +16,18 @@
     <style>
         body {
             background-image:
-            /*radial-gradient(farthest-corner at 84% 20%, rgb(24 72 160) 1%, rgb(26 61 128) 10%, rgb(29 52 97) 20%, rgb(32 42 65) 30%, rgb(34 32 33) 40%, rgb(32, 32, 32) 50%);*/
             radial-gradient(circle farthest-corner at 84% 12%, rgb(24 72 160) 1%, rgb(40 33 37) 19%, rgb(34 32 33) 30%, rgb(32, 32, 32) 50%);
             position: relative;
             background-size: 100% 200%;
+            background: -ms-radial-gradient(circle farthest-corner at 84% 12%, rgb(24 72 160) 1%, rgb(40 33 37) 19%, rgb(34 32 33) 30%, rgb(32, 32, 32) 50%); /* IE10 */  
+            background: -moz-radial-gradient(circle farthest-corner at 84% 12%, rgb(24 72 160) 1%, rgb(40 33 37) 19%, rgb(34 32 33) 30%, rgb(32, 32, 32) 50%); /* FF 3.6+ */  
+            background: -webkit-radial-gradient(circle farthest-corner at 84% 12%, rgb(24 72 160) 1%, rgb(40 33 37) 19%, rgb(34 32 33) 30%, rgb(32, 32, 32) 50%); /* Safari 5.1+, Chrome 10+ */  
+            background: -webkit-gradient(radial, circle farthest-corner at 84% 12%, rgb(24 72 160) 1%, rgb(40 33 37) 19%, rgb(34 32 33) 30%, rgb(32, 32, 32) 50%); /* Safari 4+, Chrome 2+ */  
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr=transparent); /* IE6 & IE7 */  
+            background: -o-radial-gradient(circle farthest-corner at 84% 12%, rgb(24 72 160) 1%, rgb(40 33 37) 19%, rgb(34 32 33) 30%, rgb(32, 32, 32) 50%); /* Opera 11.10 */  
+            background: radial-gradient(circle farthest-corner at 84% 12%, rgb(24 72 160) 1%, rgb(40 33 37) 19%, rgb(34 32 33) 30%, rgb(32, 32, 32) 50%); /* the standard */  
+            -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr=transparent)"; /* IE8+ */  
+            z-index: 1;
         }
     </style>
 </head>
@@ -103,15 +111,15 @@
             <div class="skills-container-dark">
                 <p>Currently I am learning: </p>
                 <div class="logos-container-dark">
-                    <img src="static/images/java.png" alt="Java logo">
                     <img src="static/images/js.png" alt="JavaScript">
-                    <img src="static/images/veeam.png" alt="Veeam">
+                    <img src="static/images/java.png" alt="Java logo">
                     <img src="static/images/ms365.jpg" alt="MS 365">
+                    <img src="static/images/veeam.png" alt="Veeam">
                 </div>
-                <p>My Stack: </p>
+                    <p>My Stack: </p>
                 <div class="logos-container-dark">
-                    <img src="static/images/html5.png" alt="HTML5 Logo">
-                    <img src="static/images/css3.png" alt="CSS3 Logo">
+                        <img src="static/images/html5.png" alt="HTML5 Logo">
+                        <img src="static/images/css3.png" alt="CSS3 Logo">
                 </div>
             </div>
             <div class="coming-soon-dark">
@@ -119,10 +127,10 @@
             </div>
             <div class="coming-soon-container">
                 <p>I´m active working on my projects and will upload them by GitHub</p>
-                <p>Follow me on Github</p>
+                <p>Follow me to see more!</p>
                 <div class="follow-me-btn">
                     <div class="follow-me-dark">
-                        <a href="https://github.com/alxww55" target="_blank">Stay tuned</a>
+                        <a href="https://github.com/alxww55" target="_blank">Stay tuned!</a>
                     </div>
                 </div>
             </div>
