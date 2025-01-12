@@ -3,38 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Desktop Simulator</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/style/main.css">
 </head>
-
 <body>
-    <div class="main">
-        <div class="flex header-control-panel bg-gray-900 h-10 flex-row justify-between">
-            <p class="pt-2 ml-4 text-white">Test OS</p>
-            <p class="pt-2 mr-4 text-white"><span></span></p>
+    <div class="main z-10">
+        <div class="flex header-control-panel bg-gray-900 h-10 flex-row justify-between prevent-select">
+            <p class="pt-2 ml-4 text-white font-sans cursor-default">Test OS</p>
+            <p class="pt-2 mr-4 text-white font-sans cursor-default" data="output"><span id="time"></span></p>
         </div>
-        <div class="icon1-2-container block">
+        <div class="icon1-2-container block prevent-select">
             <div class="icon">
-                <img class="h-20 w-20 inline-block" src="src/images/folder.png" alt="Folder 1">
+                <img class="pointer-events-none h-20 w-20 inline-block" src="src/images/folder.png" alt="Folder 1">
                 <p class="font-sans flex pl-3 w-fit text-black text-center">Folder 1</p>
             </div>
             <div class="icon">
-                <img class="h-20 w-20 inline-block" src="src/images/github.png" alt="Github">
+                <img class="pointer-events-none h-20 w-20 inline-block" src="src/images/github.png" alt="Github">
                 <p class="font-sans flex pl-4 w-fit text-black text-center">GitHub</p>
             </div>
         </div>
-        <div class="icon3-4-container block">
+        <div class="icon3-4-container block prevent-select">
             <div class="icon">
-                <img class="h-20 w-20 inline-block" src="src/images/folder.png" alt="Folder 1">
+                <img class="pointer-events-none h-20 w-20 inline-block" data="accent" src="src/images/folder.png" alt="Folder 1">
                 <p class="font-sans flex pl-3 w-fit text-black text-center">Folder 3</p>
             </div>
             <div class="icon">
-                <img class="h-20 w-20 inline-block" src="src/images/folder.png" alt="Folder 1">
+                <img class="pointer-events-none h-20 w-20 inline-block" data="accent" src="src/images/folder.png" alt="Folder 1">
                 <p class="font-sans flex pl-3 w-fit text-black text-center">Folder 4</p>
             </div>
+        </div>
+        <div class="logo flex absolute z-20 flex-row justify-center items-center position pointer-events-none">
+            <img class="logo-size" src="src/images/Logo.png" alt="">
         </div>
     </div>
 </body>

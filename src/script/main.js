@@ -1,29 +1,47 @@
-let getDay = new Date().getDay();
-let getHours = new Date().getHours();
-let getMinutes = new Date().getMinutes();
+function updateTime() {
+    let date = new Date();
+    let getDay = date.getDay();
+    let getDate = date.getDate();
+    let getMonth = date.getMonth();
+    let getHours = date.getHours();
+    let getMinutes = date.getMinutes();
 
-switch (getDay) {
-    case 0: 
-        getDay = 'Sun';
-        break;
-    case 1:
-        getDay = 'Mon';
-        break;
-    case 2:
-        getDay = 'Tue';
-        break;
-    case 3:
-        getDay = 'Wed';
-        break;
-    case 4:
-        getDay = 'Thu';
-        break;
-    case 5:
-        getDay = 'Fri';
-        break;
-    case 6:
-        getDay = 'Sat';
-        break;
-}      
-console.log(`Current time is: ${getHours}:${getMinutes}`);
-console.log(`Current day is: ${getDay}`);
+    if (getMinutes < 10) {
+        getMinutes = '0' + getMinutes;
+    }
+
+    if (getHours < 10) {
+        getHours = '0' + getHours;
+    }
+
+    let day = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+    for (let i = 0; i < day.length; i + 1) {
+        if (getDay === i) {
+            getDay = day[i];
+            break;
+        } else {
+            getDay = 'error';
+            console.log('Error to get day');
+        }
+    }
+
+    let month = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    for (let i = 0; i < month.length; i + 1) {
+            if (getMonth === i) {
+                getMonth = month[i];
+                break;
+            } else {
+                getMonth = 'error';
+                console.log('Error to get month');
+            }
+        }
+
+    let time = `${getDay}, ${getMonth} ${getDate}, ${getHours}:${getMinutes}`;
+
+    document.getElementById('time').textContent = time;
+
+    setTimeout(function(){updateTime()}, 1000)
+}
+
+updateTime();
+
