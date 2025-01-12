@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background: fixed;
+    background-image: url("../images/bckgrnd-2.png");
+    background-size: cover;
+}
+
+.icon {
+    display: inline-block;
+    margin: 2em;
+}
