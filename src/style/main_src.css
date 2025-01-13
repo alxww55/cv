@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/*Some configs*/
 body {
     background-image: radial-gradient(circle, #5de0e6, #004aad);
     background-attachment: fixed;
