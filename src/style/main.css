@@ -855,6 +855,8 @@ video {
   outline-style: solid;
 }
 
+/*Some configs*/
+
 body {
   background-image: radial-gradient(circle, #5de0e6, #004aad);
   background-attachment: fixed;
@@ -889,10 +891,13 @@ body {
 }
 
 .position {
-  top: 30%;
-  transform: translateY(-50%);
-  left: 50%;
-  transform: translateX(-50%);
+  margin-top: 20rem;
+  /* bottom: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%); */
 }
 
 .logo-size {

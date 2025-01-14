@@ -10,15 +10,15 @@
     <link rel="stylesheet" href="src/style/main.css">
 </head>
 <body>
-    <div class="main z-10">
-        <div class="flex header-control-panel bg-gray-900 h-10 flex-row justify-between prevent-select">
-            <p class="pt-2 ml-4 text-white font-sans cursor-default">Test OS</p>
-            <p class="pt-2 mr-4 text-white font-sans cursor-default" data="output"><span id="time"></span></p>
-        </div>
+    <div class="flex header-control-panel bg-gray-900 h-10 flex-row justify-between prevent-select">
+        <p class="pt-2 ml-4 text-white font-sans cursor-default">Test OS</p>
+        <p class="pt-2 mr-4 text-white font-sans cursor-default" data="output"><span id="time"></span></p>
+    </div>
+    <div class="main absolute z-20">
         <div class="icon1-2-container block prevent-select">
             <div class="icon">
-                <img class="pointer-events-none h-20 w-20 inline-block" src="src/images/folder.png" alt="Folder 1">
-                <p class="font-sans flex pl-3 w-fit text-black text-center">Folder 1</p>
+            <img class="pointer-events-none h-20 w-20 inline-block" src="src/images/folder.png" alt="Folder 1">
+            <p class="font-sans flex pl-3 w-fit text-black text-center">Folder 1</p>
             </div>
             <div class="icon">
                 <img class="pointer-events-none h-20 w-20 inline-block" src="src/images/github.png" alt="Github">
@@ -35,9 +35,19 @@
                 <p class="font-sans flex pl-3 w-fit text-black text-center">Folder 4</p>
             </div>
         </div>
-        <div class="logo flex absolute z-20 flex-row justify-center items-center position pointer-events-none">
-            <img class="logo-size" src="src/images/Logo.png" alt="">
+        <div class="icon5-6-container block prevent-select z-20">
+            <div class="icon">
+                <img class="pointer-events-none h-20 w-20 inline-block" data="accent" src="src/images/folder.png" alt="Folder 1">
+                <p class="font-sans flex pl-3 w-fit text-black text-center">Folder 5</p>
+            </div>
+            <div class="icon">
+                <img class="pointer-events-none h-20 w-20 inline-block" data="accent" src="src/images/folder.png" alt="Folder 1">
+                <p class="font-sans flex pl-3 w-fit text-black text-center">Folder 6</p>
+            </div>
         </div>
+    </div>
+    <div class="logo flex relative flex-row justify-center z-10 items-center position pointer-events-none">
+        <img class="logo-size" src="src/images/Logo.png" alt="">
     </div>
 </body>
 <script src="src/script/main.js" type="module"></script>
