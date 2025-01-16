@@ -70,5 +70,35 @@ function updateTime() {
     updateTime();
   }, 30000);
 }
-
+function moveCursor() {
+  const cursor = document.getElementById("cursor-custom");
+  document.addEventListener("mousemove", (e) => {
+    cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+  });
+  window.addEventListener('mousemove', moveCursor);
+}
+let isAccented = false;
+let icon = "";
+function iconAccentClick() {
+  for (let i = 1; i <= 6; i++) {
+    let currentIcon = document.querySelector(`[data-folder${i}]`);
+    currentIcon.addEventListener('click', () => {
+      isAccented = true;
+      currentIcon.style.backgroundColor = "#004d87";
+      currentIcon.style.opacity = "0.5";
+      icon = currentIcon;
+    });
+  }
+  document.addEventListener('click', (event) => {
+    if (isAccented && !event.target.matches('[data-folder1], [data-folder2], [data-folder3], [data-folder4], [data-folder5], [data-folder6]')) {
+      icon.style.backgroundColor = "";
+      icon.style.opacity = "1";
+      isAccented = false;
+    } else {
+    
+    }
+  });
+}
+window.onload = moveCursor();
+iconAccentClick();
 updateTime();

@@ -10,45 +10,49 @@
     <link rel="stylesheet" href="src/style/main.css">
 </head>
 <body>
+    <div class="cursor-custom z-50 absolute pointer-events-none" id="cursor-custom">
+        <img src="src/images/cursor.png" alt="cursor">
+    </div>
     <div class="flex header-control-panel bg-gray-900 h-10 flex-row justify-between prevent-select">
-        <p class="pt-2 ml-4 text-white font-sans cursor-default">Test OS</p>
-        <p class="pt-2 mr-4 text-white font-sans cursor-default" data="output"><span id="time"></span></p>
+        <p class="pt-2 ml-4 text-white font-sans">Test OS</p>
+        <p class="pt-2 mr-4 text-white font-sans" data="output"><span id="time"></span></p>
     </div>
     <div class="main absolute z-20">
         <div class="icon1-2-container block prevent-select">
-            <div class="icon">
+            <div class="icon" data-folder1>
             <img class="pointer-events-none h-20 w-20 inline-block" src="src/images/folder.png" alt="Folder 1">
             <p class="font-sans flex pl-3 w-fit text-black text-center">Folder 1</p>
             </div>
-            <div class="icon">
+            <div class="icon" data-folder2>
                 <img class="pointer-events-none h-20 w-20 inline-block" src="src/images/github.png" alt="Github">
                 <p class="font-sans flex pl-4 w-fit text-black text-center">GitHub</p>
             </div>
         </div>
         <div class="icon3-4-container block prevent-select">
-            <div class="icon">
+            <div class="icon" data-folder3>
                 <img class="pointer-events-none h-20 w-20 inline-block" data="accent" src="src/images/folder.png" alt="Folder 1">
                 <p class="font-sans flex pl-3 w-fit text-black text-center">Folder 3</p>
             </div>
-            <div class="icon">
+            <div class="icon" data-folder4>
                 <img class="pointer-events-none h-20 w-20 inline-block" data="accent" src="src/images/folder.png" alt="Folder 1">
                 <p class="font-sans flex pl-3 w-fit text-black text-center">Folder 4</p>
             </div>
         </div>
         <div class="icon5-6-container block prevent-select z-20">
-            <div class="icon">
+            <div class="icon" data-folder5>
                 <img class="pointer-events-none h-20 w-20 inline-block" data="accent" src="src/images/folder.png" alt="Folder 1">
                 <p class="font-sans flex pl-3 w-fit text-black text-center">Folder 5</p>
             </div>
-            <div class="icon">
+            <div class="icon" data-folder6>
                 <img class="pointer-events-none h-20 w-20 inline-block" data="accent" src="src/images/folder.png" alt="Folder 1">
                 <p class="font-sans flex pl-3 w-fit text-black text-center">Folder 6</p>
             </div>
         </div>
     </div>
-    <div class="logo flex relative flex-row justify-center z-10 items-center position pointer-events-none">
-        <img class="logo-size" src="src/images/Logo.png" alt="">
+    <div class="logo flex relative justify-center z-10 position pointer-events-none">
+        <img class="logo-size" src="src/images/Logo.png" alt="logo">
     </div>
+    <!-- <iframe crossorigin='anonymous' src="https://github.com/alxww55" frameborder="0"></iframe> -->
 </body>
 <script src="src/script/main.js" type="module"></script>
 </html>
